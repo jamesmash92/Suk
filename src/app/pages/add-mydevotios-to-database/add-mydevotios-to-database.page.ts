@@ -3,14 +3,15 @@ import { NavController, NavParams } from '@ionic/angular';
 import {Devotions} from '../../../environments/environment';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {AngularFireDatabase} from 'angularfire2/database';
-import {AllMyDevotionsPage } from '../all-my-devotions/all-my-devotions.page';
 import { Directive, HostListener, ElementRef } from '@angular/core';
+import {AllMyDevotionsPage } from '../all-my-devotions/all-my-devotions.page';
 import { take } from 'rxjs/operators';
 
 
 @Component({
   selector: 'page-add-my-devotios-to-database',
   templateUrl: 'add-my-devotios-to-database.html',
+  styleUrls: [ 'add-my-devotios-to-database.scss']
 })
 
 @Directive({
@@ -18,7 +19,8 @@ import { take } from 'rxjs/operators';
   selector: 'app-ion-textarea[autosize]' // Attribute selector,
 })
 
-export class AddMydevotiosToDatabasePageModuleDirective {
+// tslint:disable-next-line:directive-class-suffix
+export class AddMydevotiosToDatabasePageModule {
 
       constructor(
         private afauth: AngularFireAuth,
