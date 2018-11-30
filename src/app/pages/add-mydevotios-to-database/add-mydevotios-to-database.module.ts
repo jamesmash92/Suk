@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-// import { AddMydevotiosToDatabasePage } from './add-mydevotios-to-database.page';
+import { AddMydevotiosToDatabasePage } from './add-mydevotios-to-database.page';
 
 const routes: Routes = [
   {

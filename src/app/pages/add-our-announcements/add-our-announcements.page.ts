@@ -15,11 +15,14 @@ import { take } from 'rxjs/operators';
   templateUrl: './add-our-announcements.page.html',
   styleUrls: ['./add-our-announcements.page.scss'],
 })
+
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: 'app-ion-textarea[autosize]' // Attribute selector,
 })
-export class AddOurAnnouncementsPageDirective {
+
+// tslint:disable-next-line:directive-class-suffix
+export class AddOurAnnouncementsPage {
 
     constructor(
       private afauth: AngularFireAuth,

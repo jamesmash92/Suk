@@ -20,7 +20,7 @@ import { take } from 'rxjs/operators';
 })
 
 // tslint:disable-next-line:directive-class-suffix
-export class AddMydevotiosToDatabasePageModule {
+export class AddMydevotiosToDatabasePage {
 
       constructor(
         private afauth: AngularFireAuth,

@@ -57,8 +57,8 @@ import { MyVerseProvider } from './services/churchservice.service';
 
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
+    {provide: ErrorHandler, useClass: StatusBar},
+    {provide: ErrorHandler, useClass: SplashScreen },
     {provide: ErrorHandler, useClass: ErrorHandler },
     HomeProvider,
     ToastProvider,

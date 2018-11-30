@@ -5,7 +5,6 @@ import {Verse} from '../../../environments/environment';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {AngularFireDatabase} from 'angularfire2/database';
 
-import {ListOfTheVerseOfTheDayPage } from '../list-of-the-verse-of-the-day/list-of-the-verse-of-the-day.page';
 import { Directive, HostListener, ElementRef } from '@angular/core';
 
 import { take } from 'rxjs/operators';
@@ -21,7 +20,9 @@ import { take } from 'rxjs/operators';
   // tslint:disable-next-line:directive-selector
   selector: 'ion-textarea[autosize]' // Attribute selector,
 })
-export class AddVerseOfTheDayPageDirective {
+
+// tslint:disable-next-line:directive-class-suffix
+export class AddVerseOfTheDayPage {
 
     constructor(
       private afauth: AngularFireAuth,

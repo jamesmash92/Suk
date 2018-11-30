@@ -19,7 +19,8 @@ import { take } from 'rxjs/operators';
   selector: 'ion-textarea[autosize]' // Attribute selector,
 })
 
-export class AddOurBlogPageDirective {
+// tslint:disable-next-line:directive-class-suffix
+export class AddOurBlogPage {
 
     constructor(
       private afauth: AngularFireAuth,
